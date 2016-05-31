@@ -13,3 +13,9 @@ elif score >= 70:
     print 'pass'
 else:
     print 'D'
+
+# bool
+# True 表示非空的量(string tuple list set dictonaty) 所有非零数
+# False 表示0 None 空的量等
+
+
