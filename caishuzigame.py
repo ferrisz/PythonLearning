@@ -19,8 +19,8 @@ for i in xrange(12):
         print '猜小了'
         countsys = countsys +1
     if countplayer == 6:
-        print 'Player win!'
+        print '玩家赢了!'
         break
     if countsys == 6:
-        print 'System win!'
+        print '系统赢了!'
         break
