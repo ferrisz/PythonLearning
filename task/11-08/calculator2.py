@@ -4,4 +4,4 @@ __author__ = 'Ferris'
 
 while(1):
     s = raw_input('Please enter the full expression:')
-    print(eval(s))
+    print eval(s)
