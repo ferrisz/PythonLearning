@@ -10,9 +10,9 @@ def judgeNumber(s):
             return False
     else:
         return True
-
-string = raw_input('请输入一个字符串:')
-if judgeNumber(string):
-    print '字符串是纯数字'
-else:
-    print '字符串不是纯数字'
+if __name__ == '__main__':
+    string = raw_input('请输入一个字符串:')
+    if judgeNumber(string):
+        print '字符串是纯数字'
+    else:
+        print '字符串不是纯数字'
