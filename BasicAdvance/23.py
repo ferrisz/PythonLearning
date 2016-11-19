@@ -2,24 +2,27 @@
 # coding=utf-8
 # Created by Ferris on 2016/11/19
 
-# 内建函数3
+# 内建函数4
+# 字符串处理函数
 
-# int() 转化对象为整型
-# long() 转化对象为长整型
-# float() 转化对象为一个浮点数
-# complex() 转化一个数为复数
+# str.capitalize() 返回一个字符串 他的首字母被大写
 
+s = 'hello'
 
-# 类型转化函数
+s.capitalize()
 
-# str() 转化一个对象为一个字符串对象
-# list() 转化一个对象为一个列表   如果为空返回空列表 如果为一个可迭代的对象返回一个列表为对象中每个元素
-list('123')
-# tuple() 转化一个对象为一个元组   如果为空返回空元组 如果为一个可迭代的对象返回一个元组为对象中每个元素
-# hex(number) 把一个整数变成一个十六进制的字符串
-# eval(hex(10))
-# eval() 把字符串当成了运算式来求值
-# oct(number) 把一个整数变成一个八进制的字符串
+# str.replace(old, new[, count])
+#   把字符串中的旧的字符串换成新的字符串 count是替换次数，默认都替换
 
-# chr(i) 返回的是一个字符  参数i是0-255之间的一个数 返回这个数对应的ascii嘛
-# ord(c) 返回一个整数   参数是一个ascii码字符
+# str.split([sep [,maxspilt]]) 默认以空格、tab、换行符切分， sep为切割符  ，maxspilt 最多切分几次
+ip = '192.168.1.1'
+ip.split('.')
+
+# str.join(iterable) 参数是个可迭代的对象 返回的是个字符串 连接可迭代的对象 str是连接符
+
+print ' '.join([str(i) for i in range(10)])
+
+import string
+string.capitalize('hello')
+string.replace('hello','o','O',1)
+
