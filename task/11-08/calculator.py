@@ -1,6 +1,6 @@
-#!/usr/local/python
+#!/usr/bin/env python
 # coding=utf-8
-__author__ = 'Ferris'
+# Created by Ferris on 2016/11/8
 
 
 # Function Define
