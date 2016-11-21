@@ -45,6 +45,7 @@ class Process(object):
         if 'MAXCONN' in conf:
             self.args['MAXCONN'] = conf['MAXCONN']
         if 'CACHESIZE' in conf:
+
             self.args['CACHESIZ'] = conf['CACHESIZE']
         options = ['-u',self.args['USER'],
                    '-p',self.args['PORT'],
