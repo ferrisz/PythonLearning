@@ -34,7 +34,7 @@ def md5sum(f):
     return m.hexdigest()
 
 s = ''
-a = os.wait(sys.argv[1])
+a = os.walk(sys.argv[1])
 for p, d, f in a:
     for i in f:
         fn = os.path.join(p, i)
