@@ -36,6 +36,7 @@ def parseIfconfig(parsed_data):
         ipaddr = line_list[1].split()[1].split(':')[1]
         break
     dic['ip'] = ipaddr
+    return dic
 
 def parseDmi(parsed_data):
     dic = {}
