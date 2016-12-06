@@ -29,4 +29,8 @@ from hostinfo.models import *
 Host.objects.all()
 
 # 查询某条记录
-Host.objects.get(hostname='node01.test.com')
+host = Host.objects.get(hostname='node01.test.com')
+
+# 修改记录值
+host.ip = '192.168.1.107'
+host.save()
