@@ -21,3 +21,12 @@ with open('/tmp/d.json','w') as fd:
 
     with open('/tmp/d.json', 'r') as fd:
         d1 = json.load(fd)
+
+# 数据库查询
+from hostinfo.models import *
+
+# 查询所有记录
+Host.objects.all()
+
+# 查询某条记录
+Host.objects.get(hostname='node01.test.com')
